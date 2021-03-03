@@ -65,9 +65,7 @@ class jvmstController extends Controller
 		->rawColumns(['action'])
 		->make(true);    
 		}
-		return view('jvmst.jvlist');
-
-        
+		return view('jvmst::jvlist');        
     }
     function addjv()
     {
