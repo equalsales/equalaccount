@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Equal\Account;
 use Illuminate\Validation\Rule;
 use Illuminate\Http\Request;
 use Validator,Redirect,Response;
