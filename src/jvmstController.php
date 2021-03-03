@@ -27,9 +27,9 @@ class jvmstController extends Controller
     // }
     function show(Request $req)
     {
-        $cno = Session::get('companyid');;
-        $fromdate = Session::get('startdate');
-        $todate = Session::get('enddate');
+        $cno = \Session::get('companyid');;
+        $fromdate = \Session::get('startdate');
+        $todate = \Session::get('enddate');
 
         if ( $req->ajax() )
 		{
