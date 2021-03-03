@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Hash;
 use DB;
 use DataTables;
 use App\DataTables\SSP;
+use Session;
 
 class jvmstController extends Controller
 {
@@ -27,9 +28,9 @@ class jvmstController extends Controller
     // }
     function show(Request $req)
     {
-        $cno = \Session::get('companyid');;
-        $fromdate = \Session::get('startdate');
-        $todate = \Session::get('enddate');
+        $cno = Session::get('companyid');;
+        $fromdate = Session::get('startdate');
+        $todate = Session::get('enddate');
 
         if ( $req->ajax() )
 		{
