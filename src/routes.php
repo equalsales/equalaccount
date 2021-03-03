@@ -9,7 +9,7 @@ Route::get('subtract/{a}/{b}', 'Equal\Account\CalculatorController@subtract');
 
 
 // For JournalBook Entry
-Route::get('jvlist', 'Equal\Account\jvmstController@show')->name('jvmst.jvlist')->middleware('checkuser:jvlist,view');
+Route::get('jvlist', 'Equal\Account\jvmstController@show');
 Route::get('addjv', 'Equal\Account\jvmstController@addjv')->middleware('checkuser:jvlist,add');
 Route::post('addjv', 'Equal\Account\jvmstController@createjv');
 Route::post('addjvmst', 'Equal\Account\jvmstController@createjvmst'); //new
