@@ -16,7 +16,10 @@ class equalaccountServiceProvider extends ServiceProvider
         //
         //$this->app->make('equal\account\TaskController');
         $this->app->make('Equal\Account\CalculatorController');
+        $this->app->make('Equal\Account\jvmstController');
+
         $this->loadViewsFrom(__DIR__.'/views', 'calculator');
+        $this->loadViewsFrom(__DIR__.'/views/jvmst', 'jvmst');
     }
 
     /**
