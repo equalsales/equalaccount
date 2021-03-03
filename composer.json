@@ -1,0 +1,19 @@
+{
+    "name": "equal/account",
+    "description": "Equal Accounts",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhruv Fitwala",
+            "email": "dhruv4yug@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Equal\\Account\\": "src/"
+        }
+    },
+    "require": {}
+}
