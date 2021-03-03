@@ -81,7 +81,7 @@
             stateSave: true
             , "processing": true
             , "serverSide": true
-            , "ajax": "{{ route('jvmst.jvlist') }}"
+            , "ajax": "{{ route('jvmst::jvlist') }}"
             , "columnDefs": [
                 {
                     "targets": [0,1,2,3,4,5,6,]
